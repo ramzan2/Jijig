@@ -1,0 +1,59 @@
+﻿<Page x:Class="MollaevYaroshevski.PageFolder.AdminFolder.AddUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MollaevYaroshevski.PageFolder.AdminFolder"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddUserPage">
+
+    <Grid>
+        <Label Content="Добавление пользователя"
+               Style="{DynamicResource LabelLogoStyle}"
+               Grid.ColumnSpan="2"
+               HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="PasswordTb"
+                     Grid.Row="2"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                                     BorderBrush="Black"
+                                     BorderThickness="0 0 0 1.5"
+                     Text="{Binding Password}"/>
+
+        <ComboBox x:Name="RoleCb"
+                      Grid.Row="3"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="2"
+                      SelectedItem="{Binding Role}" 
+                          DisplayMemberPath="NameRole"
+                          SelectedValuePath="IdRole"/>
+        <TextBox x:Name="LoginTb"
+                     Grid.Row="1"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                                     BorderBrush="Black"
+                                     BorderThickness="0 0 0 1.5"
+                     Text="{Binding Login}"/>
+
+        <Button x:Name="SaveBtn" Content="Добавить пользователя"
+                     Foreground="#2a5674"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"                 
+                    Click="SaveBtn_Click"/>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Page>
