@@ -1,13 +1,13 @@
-﻿<Window x:Class="MollaevYaroshevski.WindowFolder.MenuAdminFolder.MenuAdminWindow"
+﻿<Window x:Class="MollaevYaroshevski.WindowFolder.MenuStaffFolder.MainStaffWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MollaevYaroshevski.WindowFolder.MenuAdminFolder"
+        xmlns:local="clr-namespace:MollaevYaroshevski.WindowFolder.MenuStaffFolder"
         mc:Ignorable="d"
-        Title="Окно администратора" Height="550" Width="1000"
-        MaxHeight="550" MaxWidth="1000"
-        MinHeight="550" MinWidth="1000"
+         Title="Окно администратора" Height="800" Width="1600"
+        MaxHeight="800" MaxWidth="1600"
+        MinHeight="800" MinWidth="1600"
         Background="#d1eeea"
         WindowStartupLocation="CenterScreen">
     <Grid>
@@ -20,40 +20,45 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="150"/>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="90"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Image Source="/MollaevYaroshevski;component/ResourceFolder/ImageFolder/c382efa7b55c3a7900f4078c31a3ad36.jpg"/>
 
                 <StackPanel Grid.Row="1">
-                    <Button x:Name="ListBookBtn" Width="260"
-                            
+                    <Button x:Name="ListBookBtn" 
+                            Background="{x:Null}"
                                 Click="ListBookBtn_Click">
+                        
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Список пользователей" 
+                            <TextBlock Text="Список читателей " 
                                        Style="{DynamicResource ButtonTextBlock}"
-                                        Foreground="#2a5674"/>
-
-                        </StackPanel>
-                    </Button>
-                    <Button x:Name="AddBookBtn" Width="260"
-                                Click="AddBookBtn_Click"
-                            >
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Добавить пользователя" 
-                                       Style="{DynamicResource ButtonTextBlock}"
-                                        Foreground="#2a5674"/>
+                                        Foreground="#2a5674"
+                                       />
+                            
                         </StackPanel>
                     </Button>
                 </StackPanel>
                 <Button x:Name="ExitBtn" Width="260"
                             HorizontalContentAlignment="Center"
                             VerticalAlignment="Bottom"
-                            Grid.Row="1" Click="ExitBtn_Click">
+                        Background="{x:Null}"
+                            Grid.Row="5" Click="ExitBtn_Click">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Выйти"
                                    Style="{DynamicResource ButtonTextBlock}"
                                     Foreground="#2a5674"/>
                     </StackPanel>
+                </Button>
+                <Button x:Name="AddReaderBtn"
+                        
+                       Grid.Row="2"
+                        Background="{x:Null}"
+                       Click="AddReaderBtn_Click" >
+                    <TextBlock Text="Добавить читателя"
+                               Style="{DynamicResource StyleTextBlock}"/>
                 </Button>
             </Grid>
             <Grid Grid.Column="1">

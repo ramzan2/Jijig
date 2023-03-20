@@ -1,6 +1,7 @@
 ﻿using MollaevYaroshevski.ClassFolder;
 using MollaevYaroshevski.DataFolder;
 using MollaevYaroshevski.WindowFolder.MenuAdminFolder;
+using MollaevYaroshevski.WindowFolder.MenuStaffFolder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,7 +67,8 @@ namespace MollaevYaroshevski.WindowFolder
                                 new MenuAdminWindow().ShowDialog();
                                 break;
                                 case 2:
-                                MBClass.InfoMB("Сотрудник");
+                                MBClass.InfoMB("Сотрудник библиотеки");
+                                new MainStaffWindow().ShowDialog();
                                 break;
                         }
                     }

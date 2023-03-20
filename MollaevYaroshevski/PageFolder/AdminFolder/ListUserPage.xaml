@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MollaevYaroshevski.PageFolder.AdminFolder"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="550"
+      d:DesignHeight="450" d:DesignWidth="600"
       Title="ListUserPage"
       >
 
@@ -16,7 +16,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="320"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Content="Список пользователей"
@@ -30,11 +31,18 @@
         <TextBox x:Name="SearchTb"    
                  Grid.Row="1"
                  TextChanged="SearchTb_TextChanged"
-                 Grid.Column="2" Margin="18"/>
+                 Grid.Column="1" Margin="18"/>
+        <Button x:Name="Export"
+                Grid.Row="1"
+                Grid.Column="3"
+                Background="{x:Null}"
+                Content="Экспорт"
+                Foreground="#2a5674"
+                BorderBrush="#2a5674" Click="Export_Click"/>
         <DataGrid x:Name="ListUserDG" IsReadOnly="True"
                   Background="{x:Null}"
                   AutoGenerateColumns="False" 
-                  Grid.ColumnSpan="2"
+                  Grid.ColumnSpan="3"
                   Grid.Row="3"
                   Foreground="#2a5674"
                   MouseDoubleClick="ListBookDG_MouseDoubleClick">

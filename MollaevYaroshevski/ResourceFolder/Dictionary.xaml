@@ -13,7 +13,11 @@
         <Setter Property="Background" Value="{x:Null}"/>
         <Setter Property="Foreground" Value="#2a5674"/>
     </Style>
-
+    <Style TargetType="DatePicker">
+        <Setter Property="Margin" Value="18"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontFamily" Value="Century"/>
+    </Style>
     <Style TargetType="ComboBox">
         <Setter Property="Margin" Value="18"/>
         <Setter Property="FontSize" Value="18"/>
@@ -96,5 +100,13 @@
     <Style TargetType="DataGridRow">
         <Setter Property="Foreground" Value="{StaticResource FillFont}"/>
         <Setter Property="Background" Value="{x:Null}"/>
+    </Style>
+    <Style x:Key="StyleTextBlock" TargetType="TextBlock">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextAlignment" Value="Left"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource FillFont}"/>
     </Style>
 </ResourceDictionary>

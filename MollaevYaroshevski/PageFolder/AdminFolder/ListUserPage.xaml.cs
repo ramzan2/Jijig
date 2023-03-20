@@ -92,5 +92,10 @@ namespace MollaevYaroshevski.PageFolder.AdminFolder
                 }
             }
         }
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -9,5 +9,7 @@ namespace MollaevYaroshevski.ClassFolder
     class VariableClass
     {
         public static int UserId { get; set; }
+
+        public static int ReaderId { get; set; }
     }
 }
