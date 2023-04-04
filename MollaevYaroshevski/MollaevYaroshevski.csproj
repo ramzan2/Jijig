@@ -149,11 +149,26 @@
     <Compile Include="PageFolder\AdminFolder\ListUserPage.xaml.cs">
       <DependentUpon>ListUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageFolder\DirectorFolder\ListBookPage.xaml.cs">
+      <DependentUpon>ListBookPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\DirectorFolder\ListReaderPage.xaml.cs">
+      <DependentUpon>ListReaderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\StaffFolder\AddCardPage.xaml.cs">
+      <DependentUpon>AddCardPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageFolder\StaffFolder\AddReaderPage.xaml.cs">
       <DependentUpon>AddReaderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFolder\StaffFolder\EditReaderPage.xaml.cs">
       <DependentUpon>EditReaderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\StaffFolder\ListBookPage.xaml.cs">
+      <DependentUpon>ListBookPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\StaffFolder\ListInstancePage.xaml.cs">
+      <DependentUpon>ListInstancePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFolder\StaffFolder\ListReaderPage1.xaml.cs">
       <DependentUpon>ListReaderPage1.xaml</DependentUpon>
@@ -163,6 +178,9 @@
     </Compile>
     <Compile Include="WindowFolder\MenuAdminFolder\MenuAdminWindow.xaml.cs">
       <DependentUpon>MenuAdminWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFolder\MenuDirectorFolder\MenuDirectorWindow.xaml.cs">
+      <DependentUpon>MenuDirectorWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowFolder\MenuStaffFolder\MainStaffWindow.xaml.cs">
       <DependentUpon>MainStaffWindow.xaml</DependentUpon>
@@ -221,11 +239,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageFolder\DirectorFolder\ListBookPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\DirectorFolder\ListReaderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\StaffFolder\AddCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageFolder\StaffFolder\AddReaderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageFolder\StaffFolder\EditReaderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\StaffFolder\ListBookPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\StaffFolder\ListInstancePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -242,6 +280,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowFolder\MenuAdminFolder\MenuAdminWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\MenuDirectorFolder\MenuDirectorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

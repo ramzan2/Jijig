@@ -41,5 +41,11 @@ namespace MollaevYaroshevski.WindowFolder.MenuStaffFolder
         {
             MaiFrame.Navigate(new PageFolder.StaffFolder.AddReaderPage());
         }
+
+ 
+        private void ListBooCBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MaiFrame.Navigate(new PageFolder.StaffFolder.ListBookPage());
+        }
     }
 }

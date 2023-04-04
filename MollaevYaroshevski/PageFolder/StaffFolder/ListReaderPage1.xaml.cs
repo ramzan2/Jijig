@@ -92,5 +92,10 @@ namespace MollaevYaroshevski.PageFolder.StaffFolder
                 }
             }
         }
+
+        private void ListReaderLB_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new PageFolder.StaffFolder.AddCardPage());
+        }
     }
 }

@@ -37,6 +37,9 @@ namespace MollaevYaroshevski.PageFolder.StaffFolder
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
+
+
+
         }
 
         private void AddPhoto_Click(object sender, RoutedEventArgs e)
